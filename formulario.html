@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <link rel="stylesheet" href="estilo/style.css">
+
 </head>
 <body>
     <div>
@@ -19,8 +21,78 @@
         <br>
     </div>
 
-    <form action="" method="get">
-        
+    <form action="" method="get" autocomplete="on">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required autocomplete="name" minlength="5" maxlength="20" placeholder="digite aqui">
+            </div>
+
+            <div class="campo">
+                <label for="isbn">Sobre Nome</label>
+                <input type="text" name="sbn" id="isbn" required autocomplete="name" minlength="5" maxlength="15" placeholder="digite aqui">
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="iem">E-mail</label>
+            <input type="email" name="em" id="iem" required autocomplete="email">
+        </div>
+
+        <div class="campo">
+            <label class="n"> De qual lado de aplicações você desenvolve?</label>
+            <label>
+                <input type="radio" name="devweb" id="idevweb" value="Front-end">Front-end
+                <input type="radio" name="devweb" id="idevweb" value="Back-end">Back-end
+                <input type="radio" name="devweb" id="idevweb" value="Fullstack">Fullstack
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="isenioridade" class="n">Senioridade</label>
+            <select name="senioridade" id="isenioridade">
+
+                <option selected disabled value="">Selecione</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senhor</option>
+
+            </select> 
+        </div>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label class="n">Selecione aas tecnologias que utiliza:</label><br><br>
+
+                <label for="ihtml">HTML</label>
+                <input type="checkbox" name="html" id="ihtml" value="HTML">
+
+                <label for="icss">CSS</label>
+                <input type="checkbox" name="css" id="icss" value="CSS">
+
+                <label for="iphp">PHP</label>
+                <input type="checkbox" name="php" id="iphp" value="PHP">
+
+                <label for="ijv">JavaScrip</label>
+                <input type="checkbox" name="jv" id="ijv" value="JavaScrip">
+
+                <label for="ic">C#</label>
+                <input type="checkbox" name="c" id="ic" value="C#">
+
+                <label for="ip">Python</label>
+                <input type="checkbox" name="p" id="ip" value="Python">
+                
+                <label for="ijava">Java</label>
+                <input type="checkbox" name="java" id="ijava" value="Java">
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br><label class="n">Conte um pouco da sua experiencia:</label>
+            <textarea name="exp" id="iexp" rows="6" style="width: 26em"></textarea>
+        </div>
+
+        <button type="submit">Concluido</button>
     </form>
 </body>
 </html>
