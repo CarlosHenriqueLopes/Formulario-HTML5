@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor1: #B1BADE;
+    --cor2: #DECDC8;
+    --cor3: #C7DEB1;
+    --cor4: #7C8091;
+    --cor5: #917B74;
+}
+
+body{
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2), white);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+main{
+    background-color: var(--cor4);
+    max-width: 350px;
+    min-height: 45vh;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+main h1{
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+main h1::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2), white);
+}
+
+.caixa{
+    position: relative;
+
+}
+

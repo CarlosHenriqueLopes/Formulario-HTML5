@@ -5,20 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+
+    <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
     <main>
-        <h1>Login</h1>
+        <h1 class="conteudo">Login</h1>
 
         <form action="" method="get">
             <div>
-                <input type="text" name="nome" id="inome" required minlength="8" maxlength="15" placeholder="Nome de usuario">
+                <input class="caixa" type="text" name="nome" id="inome" required minlength="8" maxlength="15" placeholder="Nome de usuario">
             </div>
 
             <div>
-                <input type="password" name="psw" id="ipsw" required >
+                <input class="caixa" type="password" name="psw" id="ipsw" required minlength="8" maxlength="15" placeholder="Senha">
             </div>
+
+            <input type="submit" value="Continue">
         </form>
+
+        <div class="footer">
+            <span>Ou conect com suas redes sociais</span>
+            <div>
+                <a href="#">[imagens]Twitter</a>
+            </div>
+
+            <div>
+                <a href="#">[imagem]Intagran</a>
+            </div>
+        </div>
     </main>
 </body>
 </html>
