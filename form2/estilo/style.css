@@ -109,28 +109,34 @@ span{
     color: rgba(0, 0, 0, 0.66)
 }
 
-.social{
+.social-block{
     width: 100%;
     padding: 0.4rem;
     font-size: 0.85rem;
-    border-radius: 4px;
     cursor: pointer;
     margin-top: 1rem;
 }
 
-/*.social a img{
+.social .social-block a img{
     margin: 0 0.5rem;
     width: 15px;
-}*/
-
-.social, .tt{
-    background-color: #1232bf;
 }
 
-.social, .insta{
-    background-color: green;
-}
-
-a{
+.social-block a{
     text-decoration: none;
+    color: white;
+}
+
+.social-block a:hover{
+    text-decoration: underline;
+    color: var(--cor3);
+    text-shadow: 1px 1px 10px white;
+}
+
+.social-block .tt-block{
+    border-radius: 4px;
+}
+
+.social-block .insta-block{
+    border-radius: 4px;
 }
