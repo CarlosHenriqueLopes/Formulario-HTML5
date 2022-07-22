@@ -14,16 +14,18 @@ body{
 }
 
 h1{
-    text-align: center;
-    font-size: 3em;
+    color: rgb(59, 50, 36);
+    text-shadow: 1px 1px 1px black;
     font-family: sans-serif;
-    padding-bottom: 10px;
+    margin-left: 7%;
+    
 }
 
 p{
-    text-align: center;
-    font-size: 1.5em;
+    color: rgb(59, 50, 36);
+    text-shadow: 1px 1px 1px black;
     font-family: sans-serif;
+    margin-left: 10%;
 }
 
 fieldset{
@@ -45,4 +47,76 @@ input, select, textarea button{
 .campo label{
     color: burlywood;
     display: block;
+    text-shadow: 1px 1px 1px black;
+    
+}
+
+fieldset{        /*obs*/
+    border: 0;
+}
+
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+
+.grupo::before, .grupo::after{
+    display: table;
+}
+
+.grupo::after{
+    clear: both;
+}
+
+/*cores das letras nas caixas*/
+input, select, textarea, button{
+    color: dimgray(174, 207, 208);
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.596);
+    font-size: 1em;
+    font-family: sans-serif;
+    border-radius: 5px;
+}
+
+/*caixas*/
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
+    display: block;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.533);
+    padding: 0.2em;
+}
+
+#check{
+    display: inline-block;
+    color: burlywood;
+    text-shadow: 1px 1px 1px black;
+}
+
+.campo input:focus, .campo select:focus, campo textarea:focus{
+    background: rgb(195, 239, 241);
+}
+
+.campo select option{  /*OBS*/
+    padding-right: 1em;
+}
+
+button{
+    font-size: 1.2em;
+    padding: 0.2em 0.6em;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.533);
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.596);
+    margin-bottom: 3em;
+
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+button:hover{
+    background: rgb(195, 239, 241);
+    box-shadow: inset 2px 2px 2px rgb(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 5px rgb(242, 244, 245);
 }
