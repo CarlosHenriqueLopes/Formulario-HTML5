@@ -184,3 +184,44 @@ body{
     text-decoration: none;
     color: white;
 }
+
+@media screen and (max-width: 1330px){
+    .img-block{
+        display: none;
+    }
+
+    .conteiner{
+        width: 50%;
+    }
+
+    .form-block{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px){
+    .conteiner{
+        width: 90%;
+        height: auto;
+    }
+
+    .input-group{
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap; /* para não quebrar*/
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+
+    .genero-group{
+        margin-top: 2rem;
+    }
+
+    .input-genero-group{
+        flex-direction: column;
+    }
+
+    .radio-box{
+        margin-top: 0.5rem;
+    }
+}
