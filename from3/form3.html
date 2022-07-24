@@ -1,20 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
     <section class="section-block">
         <div class="div-block">
-            <form action="">
-                
+            <form action="" method="get">
+                <h1>Entre em contato</h1>
+                <p>Peenchendo o formulário e entraremos em contado com você</p>
+
+                <div class="nome">
+                    <label for="inome">Nome</label>
+                    <input class="input" type="text" name="nome" id="inome" required minlength="8" maxlength="20" placeholder="Seu nome completo">
+                </div>
+
+                <div class="email">
+                    <label for="iem">E-mail</label>
+                    <input class="input" type="email" name="em" id="iem" required placeholder="Seu e-mail">
+                </div>
+
+                <div class="itel">
+                    <label for="itel">tel:</label>
+                    <input class="input" type="tel" name="tel" id="itel" required placeholder="Seu telefone">
+                </div>
+
+                <div class="botao">
+                    <input type="submit" value="Enviar">
+                </div>
             </form>
 
         </div>
-
     </section>
 </body>
 </html>
