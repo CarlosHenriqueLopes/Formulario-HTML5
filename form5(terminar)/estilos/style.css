@@ -54,7 +54,6 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding: 2rem;
 }
 
@@ -66,14 +65,44 @@ img{
     height: 50%;
 }
 
-.box-label{
+.box-header{
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 3rem;
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.box-labels{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-h1{
-    font-size: 5em;
-    padding: 0.5em 0em;
+input{
+    height: 3rem;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 2rem;
+}
+
+.box-links{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.btns-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    width: 100%;
 }
