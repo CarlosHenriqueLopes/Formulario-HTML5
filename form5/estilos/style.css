@@ -5,7 +5,7 @@
 
 *{
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
     box-sizing: border-box;
 
     font-family: 'Festive', cursive;
@@ -19,8 +19,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #867D8C;
 
-    background-color: rgb(49, 48, 48);
 }
 
 .container{
@@ -30,7 +30,9 @@ body{
     align-items: center;
     justify-content: center;
     margin-top: 5%;
-    border: 2px solid white;
+    border: 2px solid #A6511F;
+    background-color: darksalmon;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.737);
 }
 
 .box-img{
@@ -46,11 +48,11 @@ body{
 img{
     width: 100%;
     height: 100%;
+    border: 2px solid #A6511F;
 }
 
 .box-form{
     width: 50%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,7 +75,7 @@ img{
 h1{
     font-size: 3rem;
     width: 100%;
-    margin-bottom: 4rem;
+    margin: 4rem 0rem;
 }
 
 .box-labels{
@@ -95,8 +97,13 @@ input{
 
 .box-links{
     display: flex;
-    align-items: center;
     gap: 5rem;
+    margin-bottom: 2rem;
+}
+
+.box-links a{
+    text-decoration: none;
+    color: black;
 }
 
 .btns-box{
@@ -105,4 +112,21 @@ input{
     align-items: center;
     margin-bottom: 3rem;
     width: 100%;
+}
+
+.btns-box button{
+    width: 100%;
+    margin-bottom: 1.5rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #A6511F;
+    font-size: 1.3rem;
+}
+
+.btns-box button:hover{
+    border: 1px solid #A6511F;
+    background-color: #F29C6B;
+    box-shadow: 1px 1px 10px#0d0d0d;
+    transition: 0.5s;
 }
