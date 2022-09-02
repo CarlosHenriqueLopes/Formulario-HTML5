@@ -11,24 +11,31 @@
     <title>Login</title>
 
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/medias.css">
 </head>
 <body>
     <main>
-        <section id="login">
-            <div id="img">
 
-            </div>
+        <section id="login">
+
+            <div id="img"></div>
 
             <div id="formulario">
+
                 <h1>Login</h1>
 
                 <p>Olá! Seja bem vindo(a), entre com seu e-mail e senha, ou cadastre-se</p>
 
                 <form action="PHP/login.php" method="post">
                     <input type="email" name="em" id="id_em">
+
+                    <input type="password" name="senha" id="id_senha" min="8" max="12">
                 </form>
+
             </div>
+
         </section>
+
     </main>
 </body>
 </html>
