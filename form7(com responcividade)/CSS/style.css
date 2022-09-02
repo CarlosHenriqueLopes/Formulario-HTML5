@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: darkcyan;
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50px, -50px);
+
+    background-color: whitesmoke;
+    height: 500px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+section#login > div#img{
+    background-image: url(../imagens/pexels-escada.jpg);
+    background-size: cover;
+    height: 200px;
+}
