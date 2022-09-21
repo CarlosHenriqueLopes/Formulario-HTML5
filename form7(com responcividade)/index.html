@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--icon-->
     <link rel="shortcut icon" href="imagens/favicon-32x32.png" type="image/x-icon">
+
+    <!--icon google-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     <title>Login</title>
 
@@ -26,10 +28,28 @@
 
                 <p>Olá! Seja bem vindo(a), entre com seu e-mail e senha, ou cadastre-se</p>
 
-                <form action="PHP/login.php" method="post">
-                    <input type="email" name="em" id="id_em">
+                <form action="PHP/login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+                        <input type="email" name="em" id="id_em" required placeholder="Seu e_mail" autocomplete="email">
+                        <label for="id_em">E_mail</label>
+                    </div>
 
-                    <input type="password" name="senha" id="id_senha" min="8" max="12">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                            lock
+                        </span>
+                        <input type="password" name="senha" id="id_senha" minlength="8" maxlength="12" required placeholder="seu nome" autocomplete="current-password">
+                        <label for="id_senha">Senha</label>
+                    </div>
+
+                    <input type="submit" value="Entrar">
+                    <a href="esquivi.hmtl"> Esquici a senha</a>
+                    <span class="material-symbols-outlined">
+                        mark_email_unread
+                    </span>
                 </form>
 
             </div>
