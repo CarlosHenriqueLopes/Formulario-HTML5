@@ -32,8 +32,8 @@ section#login{
     overflow: hidden; /*para img não sair do block*/
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
 
-    transition: width 0.5s, height 0.5s;
     transition-timing-function: ease; /*para dar uma suavisada na animação*/
+    transition: width 0.5s, height 0.5s;
 }
 
 section#login > div#img{
@@ -53,6 +53,90 @@ h1{
     margin-bottom: 8px;
 }
 
-p{
-    font-size: 0.8em ;
+/*campo do email e senha*/
+form > div.campo{
+    display: block;
+    height: 40px;
+    width: 100%;
+
+    background-color: darkcyan;
+    margin: 5px 0px;
+    border-radius: 8px;
+    border: 2px solid darkcyan;
+
+}
+
+/*icons do email e senha*/
+form > div.campo span{
+    font-size: 1.5em;
+    width: 40px;
+    padding: 5px;
+    color: white;
+}
+
+div.campo > input{
+    background-color: rgb(7, 204, 204);
+    font-size: 0.9em;
+    height: 100%;
+    width: calc(100% - 44px); /*calculo para fazer a caixar cobrir o tamanho exato sem quebrar no icon*/
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 3px;
+    transform: translateY(-7px); /*para subir um pouco a caixa input*/
+}
+
+/*para clik da caixa do input*/
+div.campo > input:focus-within{
+    background-color: white;
+}
+
+form > div.campo label{
+    display: none;
+}
+
+/*submit botao*/
+form > input[type=submit]{
+    display: block;
+
+    background-color: darkcyan;
+    width: 100%;
+    height: 30px;
+    font-size: 1em;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+form > input[type=submit]:hover{
+    background-color: rgb(7, 204, 204);
+    color: rgb(15, 82, 82);
+}
+
+/*link botao*/
+form > a.btn{
+    display: block;
+
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    height: 30px;
+    font-size: 1em;
+    padding: 6px;
+    background-color: rgb(7, 204, 204);
+    border: none;
+    border-radius: 5px;
+    color: rgb(15, 82, 82);
+    margin-top: 8px;
+
+}
+
+form > a.btn:hover{
+    background-color: rgb(15, 82, 82);
+    color: rgb(7, 204, 204);
+}
+
+/*icon do link*/
+form > a.btn > span{
+    font-size: 0.8em;
 }
